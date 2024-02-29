@@ -17,6 +17,8 @@ class AbstractOperationResultTest extends TestCase
         $result = UserCreatedResultStub::success(new UserDTOExample('John Doe', 'john@doe.com'));
 
         $data = $result->getSuccessData();
-        $toto = $data->name;
+
+        // --> can be autocompleted + already verified by the type system
+        $this->assertEquals('John Doe', $data->name);
     }
 }
