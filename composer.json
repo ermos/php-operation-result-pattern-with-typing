@@ -1,0 +1,25 @@
+{
+    "name": "ermos/php-operation-result-pattern-with-typing",
+    "description": "Example of implementation of Operation Result Pattern that handle type",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ermos\\OperationResult\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kilian Smiti",
+            "email": "kilian@smiti.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    }
+}
